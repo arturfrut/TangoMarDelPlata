@@ -1,27 +1,5 @@
-import Link from 'next/link'
+import ProfessorClass from '@/components/ProfessorClass'
 
-export default function Home() {
-  const mainBtns = [
-    {
-      label: 'Ver Clases y Milongas',
-      route: '/clasesymilongas'
-    },
-    {
-      label: 'Escuelas de tango y particulares',
-      route: '/escuelasdetango'
-    },
-    {
-      label: 'Sobre nosotros Quiero colaborar',
-      route: '/sobrenosotros'
-    }
-  ]
-
-  return (
-    <div>
-    
-        <h1> Escuelas tango</h1>
-        
-     
-    </div>
-  )
+export default function TangoSchools() {
+  return <ProfessorClass />
 }
