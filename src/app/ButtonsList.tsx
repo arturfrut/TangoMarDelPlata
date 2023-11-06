@@ -26,8 +26,7 @@ export default function ButtonsList() {
         <Link href={route} key={route} className={'my-2'}>
           <button
             type='button'
-            className='text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-sm text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700'
-          >
+            className='border-2 border-[#0070F0] text-[#0070F0] focus:outline-none hover:bg-[#0070F0] hover:text-white hover:border-[#0070F0] focus:ring-4 focus:ring-[#0070F0] font-buttonsF rounded-xl text-sm px-5 py-2 mr-2 mb-2'          >
             {' '}
             {label}
           </button>
