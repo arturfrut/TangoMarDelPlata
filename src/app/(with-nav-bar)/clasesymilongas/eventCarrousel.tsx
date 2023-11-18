@@ -17,28 +17,48 @@ const EventCarrousel = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const activeNumber = page === carrouselEvents.length ? 0 : page + 1
-      setPage(activeNumber)
-    }, 3000) //
+      setPage(prevPage =>
+        prevPage === carrouselEvents.length - 1 ? 0 : prevPage + 1
+      )
+    }, 3000)
 
     return () => clearInterval(interval)
-  }, [])
+  }, [carrouselEvents.length])
+
   return (
     <section>
       <EventItem event={{ ...carrouselEvents[page], isCarrousel: true }} />
 
       {carrouselEvents.length > 1 && (
         <ButtonGroup>
-          <Button color={'primary'} onClick={() => setPage(page === 0 ? carrouselEvents.length : page - 1)}>
+          <Button
+            color={'primary'}
+            onClick={() =>
+              setPage(prevPage =>
+                prevPage === 0 ? carrouselEvents.length - 1 : prevPage - 1
+              )
+            }
+          >
             {'<'}
           </Button>
 
           {buttons.map((_, i) => (
-            <Button color={page === i ? 'primary' : 'secondary'} key={i} onClick={() => setPage(i)}>
+            <Button
+              color={page === i ? 'primary' : 'secondary'}
+              key={i}
+              onClick={() => setPage(i)}
+            >
               {i + 1}
             </Button>
           ))}
-          <Button color={'primary'} onClick={() => setPage(page === carrouselEvents.length ? 0 : page + 1)}>
+          <Button
+            color={'primary'}
+            onClick={() =>
+              setPage(prevPage =>
+                prevPage === carrouselEvents.length - 1 ? 0 : prevPage + 1
+              )
+            }
+          >
             {'>'}
           </Button>
         </ButtonGroup>
