@@ -16,8 +16,8 @@ export default function NavBar() {
       label: 'Escuelas y clases particulares'
     },
     {
-      link: 'escuelasdetango',
-      label: 'Escuelas y clases particulares'
+      link: '/sobreNosotros',
+      label: 'Sobre nosotros'
     }
   ]
 
