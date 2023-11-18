@@ -7,8 +7,6 @@ const weekEvents = mockEvents
 
   return (
     <main>
-      <h1> Escuelas tango</h1>
-      <h1> Escuelas tango</h1>
       <EventCarrousel />
       <AccordionLessons weekEvents={mockEvents}/>
     </main>

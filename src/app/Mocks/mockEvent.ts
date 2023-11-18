@@ -3,7 +3,6 @@ const currentDay = today.getDay()
 const daysUntilSaturday = 6 - currentDay + 1
 const nextSaturday = new Date(today)
 nextSaturday.setDate(today.getDate() + daysUntilSaturday)
-console.log(nextSaturday)
 
 export const mockEvents = [
   {
@@ -40,7 +39,7 @@ export const eventDetail = {
       // schedule: tipo date,
       schedule: '19 a 22:30',
       title: 'Clase especial de sacadas',
-      eventDescription: 'lorem ipsum dolor sit amet, consect'
+      eventDescription: 'lorem ipsum dolor sit amet, consect',
     },
     {
       eventType: 'Práctica',
@@ -48,7 +47,16 @@ export const eventDetail = {
       schedule: '22:30 a 1:30',
       title: 'Práctica - Guiada por profesores',
       eventDescription: 'lorem ipsum dolor sit amet, consect'
-    }
+    },
+    {
+      eventType: 'Práctica',
+      // schedule: tipo date,
+      schedule: '22:30 a 1:30',
+      title: 'Bailan Micho y Tito',
+      eventDescription: 'lorem ipsum dolor sit amet, consect',
+      specialEvent: true
+    },
+    
   ],
   eventImgs: ['https://media.tacdn.com/media/attractions-splice-spp-674x446/09/92/a8/81.jpg']
 }
@@ -69,7 +77,7 @@ export const mockCarrousel = [
     eventId: 1
   },
   {
-    img: 'https://i.ibb.co/Q67BKKB/la-Rada-Tango-Img.jpg',
+    img: 'https://rlv.zcache.es/pegatina_cuadrada_tango_argentino_buenos_aires_fileteado_porteno-r8972e737e6d441f8801b6e8d52cf457a_0ugmc_8byvr_644.webp',
     date: nextSaturday,
     // schedule: tipo date,
     schedule: 'Mier vie 10 a 12 hs',
