@@ -2,7 +2,7 @@
 import { Accordion, AccordionItem, Card, CardBody, User } from '@nextui-org/react'
 import Link from 'next/link'
 
-export default function ProfessorClass() {
+export default function ItemsGroup() {
   return (
     <Card>
       <CardBody className='flex flex-row items-center gap-3'>

@@ -1,5 +1,5 @@
-import ProfessorClass from '@/components/ProfessorClass'
+import ItemsGroup from './ItemsGroup'
 
 export default function TangoSchools() {
-  return <ProfessorClass />
+  return <ItemsGroup />
 }
