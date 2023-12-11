@@ -1,8 +1,9 @@
 const today = new Date()
 const currentDay = today.getDay()
-const daysUntilSaturday = 6 - currentDay + 1
+const daysUntilSaturday = 5 - currentDay + 1
 const nextSaturday = new Date(today)
 nextSaturday.setDate(today.getDate() + daysUntilSaturday)
+console.log(nextSaturday)
 
 export const mockEvents = [
   {
@@ -39,7 +40,7 @@ export const eventDetail = {
       // schedule: tipo date,
       schedule: '19 a 22:30',
       title: 'Clase especial de sacadas',
-      eventDescription: 'lorem ipsum dolor sit amet, consect',
+      eventDescription: 'lorem ipsum dolor sit amet, consect'
     },
     {
       eventType: 'Práctica',
@@ -55,10 +56,11 @@ export const eventDetail = {
       title: 'Bailan Micho y Tito',
       eventDescription: 'lorem ipsum dolor sit amet, consect',
       specialEvent: true
-    },
-    
+    }
   ],
-  eventImgs: ['https://media.tacdn.com/media/attractions-splice-spp-674x446/09/92/a8/81.jpg']
+  eventImgs: [
+    'https://media.tacdn.com/media/attractions-splice-spp-674x446/09/92/a8/81.jpg'
+  ]
 }
 
 export const mockCarrousel = [
